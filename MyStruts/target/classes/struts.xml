@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<struts>
+    <interceptor class="cn.itcast.interceptor.ParamInterceptor"></interceptor>
+    <constant name="struts.action.extension" value="action"/>
+    <action name="HelloAction" method="execute" class="cn.itcast.action.HelloAction">
+        <result name="success">/index.jsp</result>
+    </action>
+</struts>
